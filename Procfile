@@ -1,0 +1,1 @@
+web: waitress-serve --port=$port portfolio.wsgi:application
