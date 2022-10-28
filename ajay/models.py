@@ -1,12 +1,13 @@
 from django.db import models
 
 # Create your models here.
+
 class Home(models.Model):
     name= models.CharField(max_length=50)
     greetings1= models.CharField(max_length=10)
     greetings2= models.CharField(max_length=10)
     # picture=models.ImageField(upload_to='picture/')
-    # save time when modified
+    
     updated=models.DateTimeField(auto_now= True)
 
     def __str__(self):
